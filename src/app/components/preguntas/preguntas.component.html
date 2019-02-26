@@ -1,0 +1,20 @@
+<div class="card" style="width: 18rem;margin-top: 15px;margin-bottom: 15px">
+    <div class="card-body">
+      <h5 class="card-title">Escribir nuevas preguntas</h5>
+      <p class="card-text">Escribe nuevas preguntas para las encuestas</p>
+      <a href="#" class="btn btn-primary">Vamos</a>
+    </div>
+  </div>
+
+  <div class="card-columns">
+
+      <div class="card border-primary mb-3" style="max-width: 18rem;" *ngFor="let question of questions;">
+          <div class="card-header">{{ question.author}}</div>
+          <div class="card-body text-primary">
+            <h5 class="card-title">{{ question.question }}</h5>
+            <p class="card-text">Categoria: {{question.category}}</p>
+            <p class="card-text">Tipo: {{question.formtype}}</p>
+            <p class="card-text">autor: {{question.author}}</p>
+          </div>
+        </div>
+  </div>
